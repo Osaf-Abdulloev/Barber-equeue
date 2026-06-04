@@ -1,0 +1,171 @@
+# Tajik translations
+msgid ""
+msgstr ""
+"Language: tg\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+
+msgid "Welcome to Barber Booking"
+msgstr "Хуш омадед ба Barber Booking"
+
+msgid "Find the best barbers and book your appointment"
+msgstr "Беҳтарин саргардро пайдо кунед ва вақти мулоқатро гирифтед"
+
+msgid "Our Barbers"
+msgstr "Саргардони мо"
+
+msgid "Our Services"
+msgstr "Хизматҳои мо"
+
+msgid "View Profile"
+msgstr "Профилро диед"
+
+msgid "Book Now"
+msgstr "Ҳозир сабти ном кунед"
+
+msgid "Chat"
+msgstr "Чат"
+
+msgid "My Appointments"
+msgstr "Мулоқатҳои ман"
+
+msgid "My Favorites"
+msgstr "Дӯстдоштаҳои ман"
+
+msgid "Notifications"
+msgstr "Огоҳиҳо"
+
+msgid "AI Consultant"
+msgstr "AI Мушовар"
+
+msgid "Change Password"
+msgstr "Рамзро тағйир диҳед"
+
+msgid "Login"
+msgstr "Воридшавӣ"
+
+msgid "Register"
+msgstr "Сабти ном"
+
+msgid "Logout"
+msgstr "Баромадан"
+
+msgid "Forgot Password"
+msgstr "Рамзро фаромӯш кардед"
+
+msgid "Home"
+msgstr "Асосӣ"
+
+msgid "Add Service"
+msgstr "Хизмат илова кунед"
+
+msgid "Add Busy Time"
+msgstr "Вақти машғул илова кунед"
+
+msgid "Add Work"
+msgstr "Кор илова кунед"
+
+msgid "Book Appointment"
+msgstr "Мулоқат сабти ном кунед"
+
+msgid "Service"
+msgstr "Хизмат"
+
+msgid "Date"
+msgstr "Сана"
+
+msgid "Time"
+msgstr "Вақт"
+
+msgid "Price"
+msgstr "Нарх"
+
+msgid "Duration"
+msgstr "Давомӣ"
+
+msgid "Description"
+msgstr "Тавсиф"
+
+msgid "Experience"
+msgstr "Таҷриба"
+
+msgid "years"
+msgstr "сол"
+
+msgid "No barbers available yet"
+msgstr "Саргард ҳануз дастрат нест"
+
+msgid "No services available yet"
+msgstr "Хизмат ҳануз дастрат нест"
+
+msgid "You have no appointments yet"
+msgstr "Шумо ҳануз мулоқат надоред"
+
+msgid "Find a Barber"
+msgstr "Саргардро пайдо кунед"
+
+msgid "Add to Favorites"
+msgstr "Ба дӯстдоштаҳо илова кунед"
+
+msgid "Remove from Favorites"
+msgstr "Аз дӯстдоштаҳо хориҷ кунед"
+
+msgid "Today's Schedule"
+msgstr "Ҷадвали имрӯза"
+
+msgid "Portfolio"
+msgstr "Портфолио"
+
+msgid "Comments"
+msgstr "Шарҳҳо"
+
+msgid "No comments yet"
+msgstr "Шарҳ ҳануз нест"
+
+msgid "Add a comment"
+msgstr "Шарҳ илова кунед"
+
+msgid "Comment"
+msgstr "Шарҳ кунед"
+
+msgid "No works in portfolio yet"
+msgstr "Кор дар портфолио ҳануз нест"
+
+msgid "Type a message"
+msgstr "Паём нависед"
+
+msgid "Send"
+msgstr "Фиристодан"
+
+msgid "Upload Your Photo"
+msgstr "Суратро бор кунед"
+
+msgid "Get Recommendation"
+msgstr "Тавсия гиред"
+
+msgid "AI Recommendation"
+msgstr "Тавсияи AI"
+
+msgid "Email"
+msgstr "Email"
+
+msgid "Send Reset Code"
+msgstr "Коди тозаро фиристед"
+
+msgid "Code from Email"
+msgstr "Код аз почта"
+
+msgid "New Password"
+msgstr "Рамзи нав"
+
+msgid "Confirm Password"
+msgstr "Рамзро тасдиқ кунед"
+
+msgid "Reset Password"
+msgstr "Рамзро тоза кунед"
+
+msgid "Old Password"
+msgstr "Рамзи кӯҳна"
+
+msgid "Change"
+msgstr "Тағйир додан"

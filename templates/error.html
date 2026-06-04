@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height:100vh;
+            margin:0;
+            background:#f5f5f5;
+        }
+
+        .container{
+            text-align:center;
+            background:white;
+            padding:30px;
+            border-radius:12px;
+            box-shadow:0 5px 15px rgba(0,0,0,.1);
+        }
+
+        .error{
+            color:#dc2626;
+            margin-bottom:20px;
+            font-size:18px;
+            font-weight:bold;
+        }
+
+        .back-btn{
+            display:inline-block;
+            padding:10px 20px;
+            background:#2563eb;
+            color:white;
+            text-decoration:none;
+            border-radius:8px;
+            transition:.3s;
+        }
+
+        .back-btn:hover{
+            background:#1d4ed8;
+            transform:translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        {% if error %}
+            <p class="error">{{ error }}</p>
+        {% endif %}
+
+        <button class="back-btn" onclick="history.back()">
+            ← Back
+        </button>
+
+    </div>
+
+</body>
+</html>

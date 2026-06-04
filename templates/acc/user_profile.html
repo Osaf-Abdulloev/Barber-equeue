@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% for i in user %}
+        <p>Name {{i.user.username}}</p>
+        <p>{{i.bio}}</p>
+        <p>Phone {{i.phone}}</p>
+        <p>Adress {{i.adress}}</p>
+        <p>Age {{i.age}}</p>
+        {% if i.img %}
+            <img width="200px" src="{{i.img.url}}" alt="Image">
+        {% else %}
+            <img width="200px" src="/media/default.png" alt="default avatar">
+        {% endif %}
+        <p>Create at {{i.created_at}}</p>
+    {% endfor %}
+</body>
+</html>

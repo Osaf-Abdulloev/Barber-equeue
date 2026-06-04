@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title text-center" style="color: #c9a227;">AI Hairstyle Consultant</h3>
+            </div>
+            <div class="card-body">
+                <p class="text-center mb-4">Upload a photo of your face and our AI will suggest the best hairstyle for you!</p>
+                
+                <form method="post" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <div class="mb-3">
+                        <label for="image" class="form-label">Upload Your Photo</label>
+                        <input type="file" name="image" id="image" class="form-control" accept="image/*" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Get Recommendation</button>
+                </form>
+                
+                {% if recommendation %}
+                <div class="mt-4 p-4" style="background-color: var(--accent-color); border-radius: 10px; border: 1px solid var(--secondary-color);">
+                    <h5 style="color: #c9a227;">AI Recommendation:</h5>
+                    <p>{{ recommendation|linebreaks }}</p>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

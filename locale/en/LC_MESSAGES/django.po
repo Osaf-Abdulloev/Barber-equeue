@@ -1,0 +1,171 @@
+# English translations
+msgid ""
+msgstr ""
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+
+msgid "Welcome to Barber Booking"
+msgstr "Welcome to Barber Booking"
+
+msgid "Find the best barbers and book your appointment"
+msgstr "Find the best barbers and book your appointment"
+
+msgid "Our Barbers"
+msgstr "Our Barbers"
+
+msgid "Our Services"
+msgstr "Our Services"
+
+msgid "View Profile"
+msgstr "View Profile"
+
+msgid "Book Now"
+msgstr "Book Now"
+
+msgid "Chat"
+msgstr "Chat"
+
+msgid "My Appointments"
+msgstr "My Appointments"
+
+msgid "My Favorites"
+msgstr "My Favorites"
+
+msgid "Notifications"
+msgstr "Notifications"
+
+msgid "AI Consultant"
+msgstr "AI Consultant"
+
+msgid "Change Password"
+msgstr "Change Password"
+
+msgid "Login"
+msgstr "Login"
+
+msgid "Register"
+msgstr "Register"
+
+msgid "Logout"
+msgstr "Logout"
+
+msgid "Forgot Password"
+msgstr "Forgot Password"
+
+msgid "Home"
+msgstr "Home"
+
+msgid "Add Service"
+msgstr "Add Service"
+
+msgid "Add Busy Time"
+msgstr "Add Busy Time"
+
+msgid "Add Work"
+msgstr "Add Work"
+
+msgid "Book Appointment"
+msgstr "Book Appointment"
+
+msgid "Service"
+msgstr "Service"
+
+msgid "Date"
+msgstr "Date"
+
+msgid "Time"
+msgstr "Time"
+
+msgid "Price"
+msgstr "Price"
+
+msgid "Duration"
+msgstr "Duration"
+
+msgid "Description"
+msgstr "Description"
+
+msgid "Experience"
+msgstr "Experience"
+
+msgid "years"
+msgstr "years"
+
+msgid "No barbers available yet"
+msgstr "No barbers available yet"
+
+msgid "No services available yet"
+msgstr "No services available yet"
+
+msgid "You have no appointments yet"
+msgstr "You have no appointments yet"
+
+msgid "Find a Barber"
+msgstr "Find a Barber"
+
+msgid "Add to Favorites"
+msgstr "Add to Favorites"
+
+msgid "Remove from Favorites"
+msgstr "Remove from Favorites"
+
+msgid "Today's Schedule"
+msgstr "Today's Schedule"
+
+msgid "Portfolio"
+msgstr "Portfolio"
+
+msgid "Comments"
+msgstr "Comments"
+
+msgid "No comments yet"
+msgstr "No comments yet"
+
+msgid "Add a comment"
+msgstr "Add a comment"
+
+msgid "Comment"
+msgstr "Comment"
+
+msgid "No works in portfolio yet"
+msgstr "No works in portfolio yet"
+
+msgid "Type a message"
+msgstr "Type a message"
+
+msgid "Send"
+msgstr "Send"
+
+msgid "Upload Your Photo"
+msgstr "Upload Your Photo"
+
+msgid "Get Recommendation"
+msgstr "Get Recommendation"
+
+msgid "AI Recommendation"
+msgstr "AI Recommendation"
+
+msgid "Email"
+msgstr "Email"
+
+msgid "Send Reset Code"
+msgstr "Send Reset Code"
+
+msgid "Code from Email"
+msgstr "Code from Email"
+
+msgid "New Password"
+msgstr "New Password"
+
+msgid "Confirm Password"
+msgstr "Confirm Password"
+
+msgid "Reset Password"
+msgstr "Reset Password"
+
+msgid "Old Password"
+msgstr "Old Password"
+
+msgid "Change"
+msgstr "Change"

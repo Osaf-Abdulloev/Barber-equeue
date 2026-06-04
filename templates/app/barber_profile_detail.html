@@ -1,0 +1,97 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-4">
+        <div class="card">
+            {% if barber.img %}
+                <img src="{{ barber.img.url }}" class="card-img-top" alt="{{ barber.user.username }}" style="height: 300px; object-fit: cover;">
+            {% else %}
+                <div class="card-img-top d-flex align-items-center justify-content-center" style="height: 300px; background-color: #2d2d2d;">
+                    <i class="fas fa-user" style="font-size: 6rem; color: #c9a227;"></i>
+                </div>
+            {% endif %}
+            <div class="card-body">
+                <h3 class="card-title">{{ barber.user.username }}</h3>
+                <p class="card-text">
+                    <i class="fas fa-map-marker-alt"></i> {{ barber.location }}<br>
+                    <i class="fas fa-star"></i> Experience: {{ barber.stajikori }} years<br>
+                    <i class="fas fa-phone"></i> {{ barber.phone }}<br>
+                    <i class="fas fa-calendar"></i> Age: {{ barber.age }}
+                </p>
+                {% if barber.bio %}
+                    <p class="card-text">{{ barber.bio }}</p>
+                {% endif %}
+                <div class="d-grid gap-2">
+                    <a href="{% url 'book_appointment' barber.id %}" class="btn btn-primary">Book Appointment</a>
+                    <a href="{% url 'chat_room' barber.id %}" class="btn btn-outline-primary"><i class="fas fa-comments"></i> Chat</a>
+                    <a href="{% url 'add_favorite' barber.id %}" class="btn btn-outline-secondary">
+                        <i class="fas fa-heart"></i> {% if is_favorite %}Remove from Favorites{% else %}Add to Favorites{% endif %}
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        {% if busy_times %}
+        <div class="card mt-3">
+            <div class="card-header">
+                <h5 class="card-title" style="color: #c9a227;">Today's Schedule</h5>
+            </div>
+            <div class="card-body">
+                {% for busy in busy_times %}
+                    <p class="text-danger"><i class="fas fa-clock"></i> Busy {{ busy.start_time }} - {{ busy.end_time }}</p>
+                {% endfor %}
+            </div>
+        </div>
+        {% endif %}
+    </div>
+    
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title" style="color: #c9a227;">Portfolio</h3>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    {% for work in works %}
+                    <div class="col-md-6 mb-4">
+                        <div class="card">
+                            <img src="{{ work.image.url }}" class="card-img-top" alt="Work" style="height: 200px; object-fit: cover;">
+                            <div class="card-body">
+                                {% if work.description %}
+                                    <p class="card-text">{{ work.description }}</p>
+                                {% endif %}
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <a href="{% url 'like_work' work.id %}" class="btn btn-sm btn-outline-danger">
+                                        <i class="fas fa-heart"></i> {{ work.likes.count }}
+                                    </a>
+                                    <small class="text-muted">{{ work.created_at|date:"M d, Y" }}</small>
+                                </div>
+                                <hr>
+                                <h6>Comments</h6>
+                                {% for comment in work.comments.all %}
+                                    <p><strong>{{ comment.user.username }}:</strong> {{ comment.text }}</p>
+                                {% empty %}
+                                    <p class="text-muted">No comments yet.</p>
+                                {% endfor %}
+                                <form method="post" action="{% url 'add_comment' work.id %}" class="mt-2">
+                                    {% csrf_token %}
+                                    <div class="input-group">
+                                        <input type="text" name="text" class="form-control" placeholder="Add a comment..." required>
+                                        <button type="submit" class="btn btn-primary">Comment</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    {% empty %}
+                    <div class="col-12 text-center">
+                        <p>No works in portfolio yet.</p>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

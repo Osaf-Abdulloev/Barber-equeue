@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="row">
+    <div class="col-12">
+        <h2 class="text-center mb-4" style="color: #c9a227;">My Appointments</h2>
+    </div>
+    {% for appointment in appointments %}
+    <div class="col-md-6 mb-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">{{ appointment.service.name }}</h5>
+                <p class="card-text">
+                    <strong>Barber:</strong> {{ appointment.barber.user.username }}<br>
+                    <strong>Date:</strong> {{ appointment.date }}<br>
+                    <strong>Time:</strong> {{ appointment.time }}<br>
+                    <strong>Status:</strong> <span class="badge bg-{% if appointment.status == 'confirmed' %}success{% elif appointment.status == 'pending' %}warning{% elif appointment.status == 'completed' %}info{% else %}danger{% endif %}">{{ appointment.status }}</span>
+                </p>
+                <a href="{% url 'chat_room' appointment.barber.id %}" class="btn btn-outline-primary"><i class="fas fa-comments"></i> Chat with Barber</a>
+            </div>
+        </div>
+    </div>
+    {% empty %}
+    <div class="col-12 text-center">
+        <p>You have no appointments yet.</p>
+        <a href="{% url 'home' %}" class="btn btn-primary">Find a Barber</a>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

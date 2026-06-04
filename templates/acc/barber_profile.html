@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% for i in barber %}
+        <p>Name {{i.user.username}}</p>
+        <p>{{i.bio}}</p>
+        <p>Стаж {{i.stajikori}}</p>
+        <p>Phone {{i.phone}}</p>
+        <p>Age {{i.age}}</p>
+        <p>Adress {{i.location}}</p>
+        {% if i.img %}
+            <img width="200px" src="{{i.img.url}}" alt="Image">
+        {% else %}
+            <img width="200px" src="/media/default.png" alt="default avatar">
+        {% endif %}
+        <p>Create at {{i.created_at}}</p>
+        {% if i.in_work %}
+            <p style="color: rgb(132, 101, 0);">Has client</p>
+        {% else %}
+            <p style="color: rgb(42, 132, 0);">No has client</p>
+        {% endif %}
+    {% endfor %}
+</body>
+</html>
